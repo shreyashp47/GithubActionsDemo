@@ -42,6 +42,11 @@ jobs:
         id: releaseApk
         run: echo "apkfile=$(find app/build/outputs/apk/debug/*.apk)" >> $GITHUB_OUTPUT
 
+      - name: Zip Files
+        uses: papeloto/action-zip@v1
+        with:
+          files: ${{ steps.releaseAab.outputs.aabfile }} ${{ steps.releaseApk.outputs.apkfile }}
+          dest: ${{ steps.releaseApk.outputs.fileZip }}.zip
     
 
 #      - name: Upload a Build Artifact
@@ -51,7 +56,7 @@ jobs:
 #          path: app/build/outputs/bundle/debug/*.aab
 
       - name: Upload Release Build to Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4.3.6
         with:
            name: release-artifacts
-           path: ${{ steps.releaseApk.outputs.apkfile }}
+           path: ${{ steps.releaseApk.outputs.fileZip }}
