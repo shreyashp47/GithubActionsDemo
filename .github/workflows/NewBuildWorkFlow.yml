@@ -32,8 +32,8 @@ jobs:
         #run: ./gradlew build 
         run: ./gradlew assembleDebug bundleDebug
         
-      - name: Build with Gradle .aab
-        run: ./gradlew bundleDebug
+ #     - name: Build with Gradle .aab
+ #       run: ./gradlew bundleDebug
 
       - name: Get release file apk path
         id: releaseApk
