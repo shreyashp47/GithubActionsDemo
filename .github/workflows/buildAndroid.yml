@@ -1,4 +1,4 @@
-name: AndroidBild
+name: Android Debug APK
 
 on:
   workflow_dispatch:
