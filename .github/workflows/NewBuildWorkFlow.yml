@@ -51,6 +51,19 @@ jobs:
           ls -l ${{ env.aabfile }}
           ls -l ${{ env.apkfile }}
 
+
+      - name: Upload AAB to Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+           name: release-aab
+           path: ${{ env.aabfile }}
+
+      - name: Upload APK to Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+           name: release-apk
+           path: ${{ env.apkfile }}
+      
       - name: Zip Files
         uses: papeloto/action-zip@v1
         with:
@@ -58,6 +71,8 @@ jobs:
             ${{ env.aabfile }}
             ${{ env.apkfile }}
           dest: app/build/outputs/release-artifacts.zip
+
+          
 
       - name: Upload Release Build to Artifacts
         uses: actions/upload-artifact@v3
