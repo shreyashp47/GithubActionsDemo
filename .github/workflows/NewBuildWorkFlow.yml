@@ -29,7 +29,8 @@ jobs:
 
 
       - name: Build with Gradle .apk
-        run: ./gradlew build
+        #run: ./gradlew build 
+        run: ./gradlew assembleDebug bundleDebug
         
       - name: Build with Gradle .aab
         run: ./gradlew bundleDebug
