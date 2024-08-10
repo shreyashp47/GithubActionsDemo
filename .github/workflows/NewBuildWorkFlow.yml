@@ -1,5 +1,12 @@
 name: Android Debug .aab & .apk
 
+
+##on:
+##  pull_request:
+#    branches : [ QA ]
+#  push :
+#      branches : [ QA ]
+
 on:
   workflow_dispatch:
     inputs:
@@ -13,6 +20,7 @@ on:
           - android
           - internalTesters
           - everyone
+
 
 jobs:
   build:

@@ -1,0 +1,46 @@
+name: Build For QA
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Release-Build"
+        default: "Generate release build"
+      testers:
+        type: choice
+        description: "Select testers"
+        options:
+          - android
+          - internalTesters
+          - everyone
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
+
+      - name: Setup Java JDK
+        uses: actions/setup-java@v4.2.2
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Build with Gradle
+        run: ./gradlew assembleDebug
+
+      - name: Get APK file path
+        id: releaseApk
+        run: echo "apkfile=$(find app/build/outputs/apk/debug/*.apk)" >> $GITHUB_ENV
+
+      - name: Verify APK path
+        run: |
+          echo "APK file path: ${{ env.apkfile }}"
+          ls -l ${{ env.apkfile }}
+
+      - name: Upload APK to Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: release-apk
+          path: ${{ env.apkfile }}
