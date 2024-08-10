@@ -27,19 +27,14 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Set up environment
+      - name: Set up keystore
         run: |
-          echo "STORE_FILE=${{ secrets.STORE_FILE }}" >> $GITHUB_ENV
-          echo "STORE_PASSWORD=${{ secrets.STORE_PASSWORD }}" >> $GITHUB_ENV
-          echo "KEY_ALIAS=${{ secrets.KEY_ALIAS }}" >> $GITHUB_ENV
-          echo "KEY_PASSWORD=${{ secrets.KEY_PASSWORD }}" >> $GITHUB_ENV
-
-      - name: Create keystore.properties
-        run: |
-          echo "storeFile=${{ env.STORE_FILE }}" > keystore.properties
-          echo "storePassword=${{ env.STORE_PASSWORD }}" >> keystore.properties
-          echo "keyAlias=${{ env.KEY_ALIAS }}" >> keystore.properties
-          echo "keyPassword=${{ env.KEY_PASSWORD }}" >> keystore.properties
+          mkdir -p keystoreDetails
+          echo "${{ secrets.KEYSTORE_FILE }}" > keystoreDetails/keystore.jks
+          echo "storeFile=keystoreDetails/keystore.jks" > keystoreDetails/keystore.properties
+          echo "storePassword=${{ secrets.STORE_PASSWORD }}" >> keystoreDetails/keystore.properties
+          echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> keystoreDetails/keystore.properties
+          echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> keystoreDetails/keystore.properties
 
       - name: Build with Gradle
         run: ./gradlew assembleRelease
