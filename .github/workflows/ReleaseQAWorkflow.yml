@@ -1,18 +1,26 @@
 name: Android Release QA APK
 
+
+
+
 on:
-  workflow_dispatch:
-    inputs:
-      name:
-        description: "Release-Build"
-        default: "Generate release build"
-      testers:
-        type: choice
-        description: "Select testers"
-        options:
-          - android
-          - internalTesters
-          - everyone
+  pull_request:
+    branches : [ QA ]
+  push :
+      branches : [ QA ]
+#on:
+#  workflow_dispatch:
+#    inputs:
+#      name:
+#        description: "Release-Build"
+#        default: "Generate release build"
+#      testers:
+#        type: choice
+#        description: "Select testers"
+#        options:
+#          - android
+#          - internalTesters
+#          - everyone
 
 jobs:
   build:
