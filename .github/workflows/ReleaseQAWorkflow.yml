@@ -4,8 +4,6 @@ name: Android Release QA APK
 
 
 on:
-  pull_request:
-    branches : [ QA ]
   push :
       branches : [ QA ]
 #on:
