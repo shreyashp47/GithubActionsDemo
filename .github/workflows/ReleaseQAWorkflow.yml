@@ -36,11 +36,10 @@ jobs:
 
       - name: Create keystore.properties
         run: |
-          mkdir -p keystoreDetails
-          echo "storeFile=${{ env.STORE_FILE }}" > keystoreDetails/keystore.properties
-          echo "storePassword=${{ env.STORE_PASSWORD }}" >> keystoreDetails/keystore.properties
-          echo "keyAlias=${{ env.KEY_ALIAS }}" >> keystoreDetails/keystore.properties
-          echo "keyPassword=${{ env.KEY_PASSWORD }}" >> keystoreDetails/keystore.properties
+          echo "storeFile=${{ env.STORE_FILE }}" > keystore.properties
+          echo "storePassword=${{ env.STORE_PASSWORD }}" >> keystore.properties
+          echo "keyAlias=${{ env.KEY_ALIAS }}" >> keystore.properties
+          echo "keyPassword=${{ env.KEY_PASSWORD }}" >> keystore.properties
 
       - name: Build with Gradle
         run: ./gradlew assembleRelease
