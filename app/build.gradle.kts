@@ -15,8 +15,8 @@ android {
         applicationId = "com.shreyash.github.actions"
         minSdk = 24
         targetSdk = 34
-        versionCode = 3
-        versionName = "1.02"
+        versionCode = 5
+        versionName = "1.05"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
