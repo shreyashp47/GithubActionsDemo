@@ -4,8 +4,9 @@ name: Android Release QA APK
 
 
 on:
-  push :
-      branches : [ QA ]
+  pull_request:
+    branches: [ QA ]
+    types: [ closed ]
 #on:
 #  workflow_dispatch:
 #    inputs:
