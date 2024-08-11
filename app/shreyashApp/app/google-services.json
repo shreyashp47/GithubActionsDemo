@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "340618773333",
+    "firebase_url": "https://location-8deb3.firebaseio.com",
+    "project_id": "location-8deb3",
+    "storage_bucket": "location-8deb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340618773333:android:ec480ba4cc91595fce25dc",
+        "android_client_info": {
+          "package_name": "com.shreyash.github.actions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340618773333-imvdhv39f7ackb1ur4vq4kbi9esqru04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi7YElu6wxrfw7-3G8d52EJ0L-OOZYZyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340618773333-imvdhv39f7ackb1ur4vq4kbi9esqru04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340618773333:android:ebb9114151c74636ce25dc",
+        "android_client_info": {
+          "package_name": "com.trinket.travelparo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340618773333-imvdhv39f7ackb1ur4vq4kbi9esqru04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi7YElu6wxrfw7-3G8d52EJ0L-OOZYZyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340618773333-imvdhv39f7ackb1ur4vq4kbi9esqru04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340618773333:android:75be526a1cedc5c3",
+        "android_client_info": {
+          "package_name": "info.shreyash.bustracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340618773333-mbp1rbbj3fb9mea6o4e45uobgs1td7f2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "info.shreyash.bustracking",
+            "certificate_hash": "8cbb8e64d7a3b7869a8aa4f7fc1276e54d3256af"
+          }
+        },
+        {
+          "client_id": "340618773333-imvdhv39f7ackb1ur4vq4kbi9esqru04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi7YElu6wxrfw7-3G8d52EJ0L-OOZYZyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340618773333-imvdhv39f7ackb1ur4vq4kbi9esqru04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

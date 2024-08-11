@@ -1,0 +1,10 @@
+#Sun Aug 11 11:54:19 IST 2024
+base.0=/Users/shreyash/Documents/Android Project/GithubActionsDemo/app/shreyashApp/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
+base.1=/Users/shreyash/Documents/Android Project/GithubActionsDemo/app/shreyashApp/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+base.2=/Users/shreyash/Documents/Android Project/GithubActionsDemo/app/shreyashApp/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/7/classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=7/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex

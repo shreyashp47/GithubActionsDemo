@@ -1,0 +1,151 @@
+apply plugin: 'com.android.library'
+/* Kotlin Support for Bottom Navigation View*/
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+def secretPropertiesFile = file("secret.properties")
+def secretProperties = new Properties()
+secretProperties.load(new FileInputStream(secretPropertiesFile))
+
+android {
+    namespace 'com.hubengagesdk'
+    defaultConfig {
+        compileSdk rootProject.ext.compileSdkVersion
+        buildToolsVersion = rootProject.ext.buildToolsVersion
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        multiDexEnabled true
+    }
+    viewBinding {
+        enabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    productFlavors {
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility = '17'
+        targetCompatibility = '17'
+    }
+}
+
+
+repositories {
+    mavenCentral() // jcenter() works as well because it pulls from Maven Central
+}
+
+ext{
+    glideLibraryVersion = '4.16.0'
+    roomLibraryVersion = '2.5.2'
+    googleMapLibraryVersion = '18.1.0'
+    googleMapLocationServicesLibraryVersion = '21.0.1'
+    crashlyticsLibraryVersion = '18.4.3'
+    exoPlayerLibraryVersion = '2.11.8'
+    firebaseBOMVersion = '32.3.1'
+    retrofitLibraryVersion = '2.9.0'
+    coroutinesVersion = '1.7.3'
+    appCompatVersion = '1.6.1'
+    androidMaterialVersion = '1.10.0'
+    lifecycleCompilerVersion = '2.6.2'
+    barcodeLibraryVersion='4.3.0'
+    multidexVersion='2.0.1'
+    subsamplingScaleImageViewVersion='3.10.0'
+    pdfiumAndroidVersion='1.9.0'
+    mediascannerVersion='1.0.3'
+    isoparserVersion='1.1.22'
+    percentlayoutVersion='1.0.0'
+    overscrollAndroidVersion='1.1.1'
+    recyclerviewVersion='1.3.1'
+    recyclerviewSelectionVersion='1.1.0'
+    commonmarkVersion='0.17.0'
+    ioSocketVersion='0.6.0'
+    dateTimePickerVersion='4.2.3'
+    flexBoxVersion='3.0.0'
+    pagingLibraryVersion='3.2.1'
+    constraintLayoutVersion='2.1.4'
+    gsonLibaryVersion='2.10.1'
+    loggingInterceptorVersion='4.11.0'
+    rxandroidVersion='2.1.1'
+    rxjavaVersion='2.2.21'
+    libphonenumberVersion='8.13.17'
+    shimmerLibraryVersion='0.5.0'
+    numberprogressbarVersion='1.4@aar'
+    signaturePadVersion='1.3.1'
+    jwtdecodeVersion='2.0.2'
+    commonsTextVersion='1.10.0'
+    omegaRecyclerViewVersion='1.10.0'
+    keyboardvisibilityeventsVersion='3.0.0-RC3'
+    androidSegmentedLibraryVersion='1.0.6'
+    jsoupLibraryVersion='1.16.1'
+    sqlcipherVersion='4.5.4'
+    sqliteLibraryVersion='2.3.1'
+    paletteVersion='1.0.0'
+    storageAccessVersion='1.5.5'
+    threeTenAbpLibraryVersion='1.4.6'
+    giphyLibraryVersion='2.3.11'
+    calenderViewVersion='2.4.0'
+    lottieLibraryVersion='6.1.0'
+    splashscreenVersion='1.0.1'
+    awsIvsPlayerVersion='1.22.0'
+    awsIvsBroadcastVersion='1.12.0'
+    legacySupportVersion='1.0.0'
+    lightCompressorVersion='1.3.2'
+    navigationVersion = '2.7.6'
+    lifecycleVersion = '2.7.0'
+    workRuntime = '2.7.1'
+}
+
+dependencies {
+
+
+    // api:
+    // Dependencies declared with api are visible and can be used by other modules
+    // that depend on the module where the dependency is declared.
+
+
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:$rootProject.desugarLibraryVersion") {
+        description('Desugaring is the process of converting Java 8 bytecode, which may use features not ' +
+                'supported on older Android versions, into bytecode that can run on those devices.')
+    }
+
+    api("com.google.android.material:material:$rootProject.androidMaterialVersion") {
+        description('a static library that you can add to your Android application in order to use APIs' +
+                ' that provide implementations of the Material Design specification')
+    }
+
+    implementation("androidx.appcompat:appcompat:$rootProject.appCompatVersion") {
+        description('Provides backwards-compatible implementations of UI-related Android SDK functionality,' +
+                ' including dark mode and Material theming.')
+    }
+
+
+
+    implementation platform("com.google.firebase:firebase-bom:$firebaseBOMVersion") {
+        description('When using the BoM, you don\'t specify versions in Firebase library dependencies' +
+                'Declare the dependencies for the Firebase Cloud Messaging and Analytics libraries')
+    }
+    implementation("com.google.firebase:firebase-messaging") {
+        description('Firebase Cloud Messaging (FCM) is a cross-platform messaging solution that lets you ' +
+                'reliably send messages at no cost.')
+    }
+    implementation("com.google.firebase:firebase-analytics") {
+        description('Google Analytics for Firebase provides free, unlimited reporting on up to 500 distinct events.')
+        exclude module: "play-services-ads-identifier"
+        exclude module: "play-services-measurement"
+        exclude module: "play-services-measurement-sdk"
+        exclude module: "play-services-measurement-api"
+    }
+
+
+
+    // DON'T ADD DEPENDENCIES TO THIS FILE DIRECTLY WITHOUT FOLLOWING THE EXISTING STANDARDS
+}

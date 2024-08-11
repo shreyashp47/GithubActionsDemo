@@ -1,0 +1,40 @@
+com.shreyash.github.actions.app-coordinatorlayout-1.1.0-0 /Users/shreyash/.gradle/caches/transforms-3/09c07a9caad4e1ecfa3e608be055a2ef/transformed/coordinatorlayout-1.1.0/res
+com.shreyash.github.actions.app-appcompat-resources-1.6.1-1 /Users/shreyash/.gradle/caches/transforms-3/0b825e8af6e5f0cfebe17c468044a5b8/transformed/appcompat-resources-1.6.1/res
+com.shreyash.github.actions.app-lifecycle-runtime-2.6.1-2 /Users/shreyash/.gradle/caches/transforms-3/0fe542b304313c5590f472c2de165692/transformed/lifecycle-runtime-2.6.1/res
+com.shreyash.github.actions.app-cardview-1.0.0-3 /Users/shreyash/.gradle/caches/transforms-3/10682d2ddcf09b014b7fbba669b37a82/transformed/cardview-1.0.0/res
+com.shreyash.github.actions.app-profileinstaller-1.3.0-4 /Users/shreyash/.gradle/caches/transforms-3/1116adb279dc0b348b505ac46fd91df7/transformed/profileinstaller-1.3.0/res
+com.shreyash.github.actions.app-core-1.12.0-5 /Users/shreyash/.gradle/caches/transforms-3/16bfc6b6a8894d9c3ca665b37be3f614/transformed/core-1.12.0/res
+com.shreyash.github.actions.app-lifecycle-process-2.6.1-6 /Users/shreyash/.gradle/caches/transforms-3/18d935d70dd92e6addcd27cd22ca62b0/transformed/lifecycle-process-2.6.1/res
+com.shreyash.github.actions.app-lifecycle-livedata-core-2.6.1-7 /Users/shreyash/.gradle/caches/transforms-3/26e30059a83f68032b29dd663fff3164/transformed/lifecycle-livedata-core-2.6.1/res
+com.shreyash.github.actions.app-material-1.11.0-8 /Users/shreyash/.gradle/caches/transforms-3/350bc02fb6b3012cc5f1ba667c7597b3/transformed/material-1.11.0/res
+com.shreyash.github.actions.app-play-services-basement-18.4.0-9 /Users/shreyash/.gradle/caches/transforms-3/38c6b965c62d27517fb116979af4c9d8/transformed/play-services-basement-18.4.0/res
+com.shreyash.github.actions.app-core-ktx-1.12.0-10 /Users/shreyash/.gradle/caches/transforms-3/3c87d1a2669b95b84dd439aca43eeee9/transformed/core-ktx-1.12.0/res
+com.shreyash.github.actions.app-transition-1.2.0-11 /Users/shreyash/.gradle/caches/transforms-3/3de12cd754382fefa8b4668e106fd1a7/transformed/transition-1.2.0/res
+com.shreyash.github.actions.app-ads-adservices-java-1.0.0-beta05-12 /Users/shreyash/.gradle/caches/transforms-3/44be43e86818ba6749a1155273f27d5e/transformed/ads-adservices-java-1.0.0-beta05/res
+com.shreyash.github.actions.app-lifecycle-viewmodel-2.6.1-13 /Users/shreyash/.gradle/caches/transforms-3/5129b2ff3ed65869e59aa1d55978c788/transformed/lifecycle-viewmodel-2.6.1/res
+com.shreyash.github.actions.app-play-services-measurement-api-22.0.2-14 /Users/shreyash/.gradle/caches/transforms-3/64c1168bda6a748c20f7c8569dc746c8/transformed/play-services-measurement-api-22.0.2/res
+com.shreyash.github.actions.app-drawerlayout-1.1.1-15 /Users/shreyash/.gradle/caches/transforms-3/6d9e15bd84769d0f9ba5d0d366ca4411/transformed/drawerlayout-1.1.1/res
+com.shreyash.github.actions.app-constraintlayout-2.1.4-16 /Users/shreyash/.gradle/caches/transforms-3/6ddf79f20cfb2902ddeef92174227339/transformed/constraintlayout-2.1.4/res
+com.shreyash.github.actions.app-core-runtime-2.2.0-17 /Users/shreyash/.gradle/caches/transforms-3/6eb3d0e4b1a8c4837cf3e21ddb9d90c0/transformed/core-runtime-2.2.0/res
+com.shreyash.github.actions.app-lifecycle-viewmodel-savedstate-2.6.1-18 /Users/shreyash/.gradle/caches/transforms-3/7e2da84bc760c722ccbcc3dbb4cbf8ed/transformed/lifecycle-viewmodel-savedstate-2.6.1/res
+com.shreyash.github.actions.app-viewpager2-1.0.0-19 /Users/shreyash/.gradle/caches/transforms-3/8083165f4f511e3e09a4e6edab8e3ab7/transformed/viewpager2-1.0.0/res
+com.shreyash.github.actions.app-savedstate-1.2.1-20 /Users/shreyash/.gradle/caches/transforms-3/83cbfe1c3a9ffbc731b1603b8ce63a6f/transformed/savedstate-1.2.1/res
+com.shreyash.github.actions.app-startup-runtime-1.1.1-21 /Users/shreyash/.gradle/caches/transforms-3/84d094d1a44bb36689354dec20c1efa2/transformed/startup-runtime-1.1.1/res
+com.shreyash.github.actions.app-ads-adservices-1.0.0-beta05-22 /Users/shreyash/.gradle/caches/transforms-3/8c05a4ad3e7075843e90eda27ff80bc6/transformed/ads-adservices-1.0.0-beta05/res
+com.shreyash.github.actions.app-appcompat-1.6.1-23 /Users/shreyash/.gradle/caches/transforms-3/8ff32db8171fde53bf6ecba012e0229a/transformed/appcompat-1.6.1/res
+com.shreyash.github.actions.app-activity-1.8.0-24 /Users/shreyash/.gradle/caches/transforms-3/9795ee3d64ef60445cb60605d6668e34/transformed/activity-1.8.0/res
+com.shreyash.github.actions.app-annotation-experimental-1.3.0-25 /Users/shreyash/.gradle/caches/transforms-3/a84ca98af443322a654a25fa0932f102/transformed/annotation-experimental-1.3.0/res
+com.shreyash.github.actions.app-lifecycle-livedata-2.6.1-26 /Users/shreyash/.gradle/caches/transforms-3/ae32b33f21acd7970602a230766b4440/transformed/lifecycle-livedata-2.6.1/res
+com.shreyash.github.actions.app-emoji2-views-helper-1.2.0-27 /Users/shreyash/.gradle/caches/transforms-3/aea7915ed6e7a166e6785e5a1c22e363/transformed/emoji2-views-helper-1.2.0/res
+com.shreyash.github.actions.app-recyclerview-1.1.0-28 /Users/shreyash/.gradle/caches/transforms-3/ddb432a428e9ec34d801b41e9d2241bb/transformed/recyclerview-1.1.0/res
+com.shreyash.github.actions.app-emoji2-1.2.0-29 /Users/shreyash/.gradle/caches/transforms-3/de862405beb892e58208f555e28042c6/transformed/emoji2-1.2.0/res
+com.shreyash.github.actions.app-fragment-1.3.6-30 /Users/shreyash/.gradle/caches/transforms-3/f4cc613dc8688bdd3d6825e3f6802f6a/transformed/fragment-1.3.6/res
+com.shreyash.github.actions.app-firebase-common-21.0.0-31 /Users/shreyash/.gradle/caches/transforms-3/f4eafa22f009f18d2be91e76b2cbe136/transformed/firebase-common-21.0.0/res
+com.shreyash.github.actions.app-pngs-32 /Users/shreyash/Documents/Android Project/GithubActionsDemo/app/build/generated/res/pngs/release
+com.shreyash.github.actions.app-res-33 /Users/shreyash/Documents/Android Project/GithubActionsDemo/app/build/generated/res/processReleaseGoogleServices
+com.shreyash.github.actions.app-resValues-34 /Users/shreyash/Documents/Android Project/GithubActionsDemo/app/build/generated/res/resValues/release
+com.shreyash.github.actions.app-packageReleaseResources-35 /Users/shreyash/Documents/Android Project/GithubActionsDemo/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+com.shreyash.github.actions.app-packageReleaseResources-36 /Users/shreyash/Documents/Android Project/GithubActionsDemo/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+com.shreyash.github.actions.app-merged_res-37 /Users/shreyash/Documents/Android Project/GithubActionsDemo/app/build/intermediates/merged_res/release
+com.shreyash.github.actions.app-main-38 /Users/shreyash/Documents/Android Project/GithubActionsDemo/app/src/main/res
+com.shreyash.github.actions.app-release-39 /Users/shreyash/Documents/Android Project/GithubActionsDemo/app/src/release/res
