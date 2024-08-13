@@ -1,0 +1,67 @@
+name: Playstore Android Release APK
+
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Release-Build"
+        default: "Generate release build"
+      testers:
+        type: choice
+        description: "Select testers"
+        options:
+          - android
+          - internalTesters
+          - everyone
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout QA Branch
+        uses: actions/checkout@v4.1.7
+        with:
+          ref: QA
+
+      - name: Setup Java JDK
+        uses: actions/setup-java@v4.2.2
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Build with Gradle
+        run: ./gradlew assembleRelease
+
+      - name: Get APK file path
+        id: releaseApk
+        run: echo "apkfile=$(find app/build/outputs/apk/release/*.apk)" >> $GITHUB_ENV
+
+      - name: Verify APK path
+        run: |
+          echo "APK file path: ${{ env.apkfile }}"
+          ls -l ${{ env.apkfile }}
+          
+      - name: Upload APK to Firebase App Distribution
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        with:
+          appId: ${{ secrets.FIREBASE_APP_ID }}
+          token: ${{ secrets.FIREBASE_TOKEN }}
+          groups: ${{ secrets.FIREBASE_TESTER_GROUP }}
+          file: ${{ env.apkfile }}
+
+      - name: Upload APK to Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: release-apk
+          path: ${{ env.apkfile }}
+
+      - name: Upload APK to Play Store
+        uses: r0adkll/upload-google-play@v1
+        with:
+          serviceAccountJson: ${{ secrets.GOOGLE_PLAY_SERVICE_ACCOUNT }} #serviceAccountJson: ${{ secrets.GOOGLE_PLAY_SERVICE_ACCOUNT }}: The JSON key for your service account.
+          packageName: com.hubengage 
+          releaseFile: ${{ env.apkfile }}
+          track: internal  #(e.g., internal, alpha, beta, production).
+          inAppUpdatePriority: 3
+          whatsNewDirectory: "whatsnew/"

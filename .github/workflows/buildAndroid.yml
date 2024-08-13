@@ -1,4 +1,4 @@
-name: Android Debug APK
+name: Android Debug APK and .aab
 
 on:
   workflow_dispatch:
